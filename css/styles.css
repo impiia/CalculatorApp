@@ -1,0 +1,217 @@
+@import 'variables.css';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'LeagueSpartan-Bold';
+    src: url('../fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'LeagueSpartan-Bold', sans-serif;
+    font-weight: 700;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.wrapper {
+    width: 540px;
+    min-height: 706px;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+
+.theme-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 76px;
+    margin-bottom: 34px;
+}
+
+.calc-heading {
+    font-size: 30px;
+}
+
+.theme-label {
+    padding-bottom: 4px;
+    margin-left: auto;
+    margin-right: 28px;
+    font-size: 14px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    height: 26px;
+    padding: 5px;
+    background-color: var(--color-keypad-bg);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-container .toggle-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.radio-container .toggle-radio:hover {
+    cursor: pointer;
+}
+
+.radio-container .toggle-radio:checked {
+    background-color: var(--color-key-red);
+}
+
+.radio-container .toggle-radio:checked:hover {
+    background-color: var(--color-key-red-hover);
+
+}
+
+
+
+.calc-display {
+    width: 100%;
+    min-height: 130px;
+    background-color: var(--color-screen-bg);
+    border-radius: 10px;
+    margin-bottom: 26px;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 42px 30px 30px 30px;
+    height: auto;
+}
+
+.result-field {
+    font-size: 54px;
+    overflow-wrap: break-word;
+    max-width: 15ch;
+}
+
+
+.calc-keypad {
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--color-keypad-bg);
+    border-radius: 10px;
+    padding: 28px 28px 32px 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 28px;
+    row-gap: 30px;
+
+}
+
+.key {
+    padding-top: 5px;
+    font-family: 'LeagueSpartan-Bold', sans-serif;
+    border-radius: 10px;
+    background: var(--color-key-main);
+    box-shadow: 0px 4px 0px var(--color-key-main-shaddow);
+    border: none;
+    font-size: 32px;
+    color: var(--color-main-key-text);
+}
+
+.key:hover {
+    background: var(--color-key-main-hover);
+}
+
+.reset,
+.equal {
+    grid-column: span 2;
+}
+
+.del,
+.reset {
+    background: var(--color-key);
+    box-shadow: 0px 4px 0px var(--color-key-shaddow);
+    color: var(--color-key-text);
+}
+
+.del:hover,
+.reset:hover {
+    background: var(--color-key-hover);
+}
+
+.equal {
+    background: var(--color-key-red);
+    box-shadow: 0px 4px 0px var(--color-key-red-shaddow);
+    color: var(--color-equal-key-text);
+}
+
+.equal:hover {
+    background: var(--color-key-red-hover);
+}
+
+
+footer {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 565px) {
+    .wrapper {
+        margin: 0 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .calc-display {
+        width: 100%;
+        min-height: 86px;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .result-field{
+        font-size: 38px;
+        max-width: 95%;
+    }
+
+    .calc-keypad {
+        column-gap: 11px;
+        row-gap: 18px;
+    }
+
+    .key {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

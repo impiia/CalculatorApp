@@ -1,0 +1,62 @@
+:root  {
+    --color-bg: hsl(222, 26%, 31%);
+    --color-keypad-bg: hsl(223, 31%, 20%);
+    --color-screen-bg: hsl(224, 36%, 15%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-key-text: hsl(0, 0%, 100%);
+    --color-main-key-text: hsl(221, 14%, 31%);
+    --color-equal-key-text: hsl(0, 0%, 100%);
+    --color-key: hsl(225, 21%, 49%);
+    --color-key-shaddow: hsl(224, 28%, 35%);
+    --color-key-red: hsl(6, 63%, 50%);
+    --color-key-red-shaddow: hsl(6, 70%, 34%);
+    --color-key-main: hsl(30, 25%, 89%);
+    --color-key-main-shaddow: hsl(28, 16%, 65%);
+
+    --color-key-hover: hsl(225, 47%, 78%);
+    --color-key-red-hover: hsl(9, 84%, 63%);
+    --color-key-main-hover: hsl(0, 0%, 100%);
+  }
+
+  [light] {
+        --color-bg: hsl(0, 0%, 90%);
+        --color-keypad-bg: hsl(0, 5%, 80%);
+        --color-screen-bg: hsl(0, 0%, 93%);
+        --color-text:  hsl(60, 10%, 19%);
+        --color-key-text: hsl(0, 0%, 100%);
+        --color-main-key-text: hsl(60, 10%, 19%);
+        --color-equal-key-text: hsl(0, 0%, 100%);
+        --color-key: hsl(185, 42%, 37%);
+        --color-key-shaddow: hsl(185, 58%, 25%);
+        --color-key-red: hsl(25, 98%, 40%);
+        --color-key-red-shaddow: hsl(25, 99%, 27%);
+        --color-key-main: hsl(40, 9%, 88%);
+        --color-key-main-shaddow: hsl(35, 11%, 61%);
+
+        --color-key-hover: hsl(189, 57%, 60%);
+        --color-key-red-hover: hsl(28, 100%, 61%);
+        --color-key-main-hover: hsl(0, 0%, 100%);
+
+    }
+
+    [violet] {
+        --color-bg: hsl(268, 75%, 9%);
+        --color-keypad-bg: hsl(268, 71%, 12%);
+        --color-screen-bg: hsl(268, 71%, 12%);
+        --color-text:  hsl(52, 100%, 62%);
+        --color-key-text: hsl(0, 0%, 100%);
+        --color-main-key-text: hsl(52, 100%, 62%);
+        --color-equal-key-text: hsl(198, 20%, 13%);
+        --color-key: hsl(281, 89%, 26%);
+        --color-key-shaddow: hsl(285, 91%, 52%);
+        --color-key-red: hsl(176, 100%, 44%);
+        --color-key-red-shaddow: hsl(177, 92%, 70%);
+        --color-key-main:  hsl(268, 47%, 21%);
+        --color-key-main-shaddow:  hsl(290, 70%, 36%);
+
+        --color-key-hover: hsl(265, 51%, 43%);
+        --color-key-red-hover: hsl(177, 100%, 77%);
+        --color-key-main-hover: hsl(272, 53%, 42%);
+    }
+  
+  
