@@ -24,6 +24,10 @@ body {
     font-weight: 700;
     background-color: var(--color-bg);
     color: var(--color-text);
+    width: 100vw;
+display: grid;
+min-height: 100vh;
+place-items: center;
 }
 
 .wrapper {
@@ -115,12 +119,11 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 42px 30px 30px 30px;
-    height: auto;
+  overflow: scroll ;
 }
 
 .result-field {
     font-size: 54px;
-    overflow-wrap: break-word;
     max-width: 15ch;
 }
 
@@ -188,14 +191,13 @@ footer {
 
 @media screen and (max-width: 565px) {
     .wrapper {
-        margin: 0 15px;
-        width: auto;
-        height: auto;
+      width: 328px;
+    height: auto;
     }
 
     .calc-display {
         width: 100%;
-        min-height: 86px;
+        min-height: 88px;
         border-radius: 10px;
         padding: 25px;
     }
